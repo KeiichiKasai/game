@@ -1,2 +1,2 @@
-# game
-.
+# Game
+Just for fun :)
