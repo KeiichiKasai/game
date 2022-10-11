@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+FLAG:
 	maxNum := 100
 	rand.Seed(time.Now().UnixNano())
 	secretNumber := rand.Intn(maxNum)
@@ -50,4 +51,14 @@ func main() {
 		}
 
 	}
+	fmt.Println("Do you want to play again?  Y/N")
+	var A string
+	fmt.Scanf("%s\n", &A)
+	fmt.Println()
+	if A == "Y" {
+		goto FLAG
+	} else {
+		fmt.Println("Bye~")
+	}
+
 }
